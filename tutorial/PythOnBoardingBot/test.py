@@ -1,5 +1,5 @@
 # test.py
-#import sys
+import sys
 # Enable debug logging
 import logging
 logging.basicConfig(level=logging.DEBUG)
