@@ -1,9 +1,10 @@
-# test.py
-#import sys
-# Enable debug logging
+"""Module providingFunction printing python version."""
 import logging
+from slack_sdk import WebClient
+
+# test.py
+# Enable debug logging
 logging.basicConfig(level=logging.DEBUG)
 # Verify it works
-from slack_sdk import WebClient
 client = WebClient()
 api_response = client.api_test()
