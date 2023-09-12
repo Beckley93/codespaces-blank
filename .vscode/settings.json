@@ -9,4 +9,5 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "python.pythonPath": "/Users/beneckley/anaconda/bin/python"
 }

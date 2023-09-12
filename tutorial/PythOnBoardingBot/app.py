@@ -1,4 +1,4 @@
-"""Module providingFunction printing python version."""
+"""Module providing Function printing python version."""
 import logging
 from slack_sdk import WebClient
 
@@ -8,3 +8,4 @@ logging.basicConfig(level=logging.DEBUG)
 # Verify it works
 client = WebClient()
 api_response = client.api_test()
+
