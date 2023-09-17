@@ -1,3 +1,7 @@
 {
-  "python.pythonPath": "/Users/beneckley/anaconda/envs/FIrstenvironment/bin/python"
+    "workbench.list.scrollByPage": false,
+    "terminal.integrated.smoothScrolling": true,
+    "output.smartScroll.enabled": false,
+    "workbench.editor.restoreViewState": false,
+    "workbench.editor.sharedViewState": true
 }

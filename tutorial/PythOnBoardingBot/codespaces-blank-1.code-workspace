@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../anaconda/ssl/misc"
+		},
+		{
+			"path": "../../../../../anaconda/envs"
+		},
+		{
+			"path": "../../../../../Documents/GitHub"
+		}
+	],
+	"settings": {
+		"workbench.list.scrollByPage": false,
+		"terminal.integrated.smoothScrolling": true,
+		"output.smartScroll.enabled": false,
+		"workbench.editor.sharedViewState": true
+	}
+}

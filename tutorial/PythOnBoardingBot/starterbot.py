@@ -1,33 +1,29 @@
 import os
 import time
 import re
-#from slackclient import SlackClient
+import ssl
+import certifi
 
-"""Module providing Function printing python version."""
+# add this line to point to your certificate path
+ssl_context = ssl.create_default_context(cafile=certifi.where())
+slack_token = "xoxb-5481474039187-5875251104550-dkBzhtpuz92HctSJfr3Eze3D"
+# next replace the previous line where you call the WebClient with the new line:
+client = WebClient(token=slack_token, ssl=ssl_context)
+
 import logging
 logging.basicConfig()
+# at the top where you are initializing other packages...
+# (both of these should have been installed with psycopy so you shouldn't need to install anything - if you get an error about not finding the package let me know)
+import ssl
+import certifi
+
+# add this line to point to your certificate path
+ssl_context = ssl.create_default_context(cafile=certifi.where())
+
+# next replace the previous line where you call the WebClient with the new line:
+client = WebClient(token=slack_token, ssl=ssl_context)
 from slack_sdk import WebClient
-token = "xoxb-5481474039187-5875251104550-dkBzhtpuz92HctSJfr3Eze3D"
-refresh_token= None
-token_update_callback= None
-client_id= "5481474039187.5878905123157"
-client_secret= "c9366fbfa0e33f72fc36d952446fdc70"
-proxies= None
-#starterbot_socketmode = "xapp-1-A05RUSM3M4M-5919474104561-dcecdb4386677e13dd236605efcf69fbadf06be22bbc7470d8a6d72e0e36ba96"
 
-# starter-bot-test 
-#Channel ID: C05SR509S76
-
-channel_id = "D05RXS7EA58"
-# copy link to profile: https://slackbot-muj5930.slack.com/team/U05RR7D32G6
-#bot
-# member_id = U05RR7D32G6
-# bot Channel ID:D05RXS7EA58
-# email: botuser-T05E5DY155H-B05SLRYFS3A@slack-bots.com
-
-# event invite link : https://join.slack.com/t/slackbot-muj5930/shared_invite/zt-236w4ja1z-IJ0eUePz_WSQJ4QcubcCLw
-# test.py
-# Enable debug logging
 logging.basicConfig(level=logging.DEBUG)
 # Verify it works
 client = WebClient()
@@ -49,7 +45,7 @@ starterbot_id = None
 #Channel ID: D05RXS7EA58
 SLACK_BOT_TOKEN='xoxb-5481474039187-5875251104550-dkBzhtpuz92HctSJfr3Eze3D'
 # <meta name="slack-app-id" content="A05RUSM3M4M">
-client_id=5481474039187.5878905123157
+#client_id=5481474039187.5878905123157
 
 # constants
 RTM_READ_DELAY = 1 # 1 second delay between reading from RTM
